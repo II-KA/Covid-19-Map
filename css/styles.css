@@ -1,0 +1,47 @@
+body, html {
+  max-width: 100vw;
+  height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#timeseriesForm {
+  text-align: center;
+  padding: 1vh 0 2vh;
+  margin: 0;
+}
+
+button {
+  background-color: rgb(49, 28, 141);
+  border: none;
+  color: white;
+  padding: 1vh 2.5vw;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(49, 28, 141, 0.6);
+}
+
+#date {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+#countryform {
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(6, 0, 19, 0.733);
+  color: rgb(178, 194, 224);
+}

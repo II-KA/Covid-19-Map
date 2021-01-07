@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="./lib/d3.min.js"></script>
+    <script src="./lib/topojson.js"></script>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/datamaps.world.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./lib/bootstrap-responsive.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+
+    <title>Covid-19 Map</title>
+  </head>
+
+  <body>
+
+    <form name="timeseriesForm" id="timeseriesForm">
+      <button id="timeseries" type="button">Time series</button>
+    </form>
+
+    <form name="countryform" id="countryform">
+      <label for="country">Give a country:</label>
+      <input
+        type="text"
+        name="country"
+        id="country"
+        placeholder="Country"
+        list="searchresults"
+        autocomplete="off"
+      />
+      <datalist id="searchresults"></datalist>
+    </form>
+
+    <section>
+      <div class="table-wrapper-scroll-y my-custom-scrollbar">
+        <table class="table table-bordered table-striped mb-0" id="stats">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Confirmed</th>
+              <th>Deaths</th>
+              <th>Recovered</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div id="container">
+      <p id="date"></p>
+    </div>
+
+    <footer id="footer">
+      <p id="statisticsDate">Latest statistics are from: </p>
+    </footer>
+
+    <script src="./js/anomalities.js"></script>
+    <script src="./js/neighbours.js"></script>
+    <script src="./js/countries.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
